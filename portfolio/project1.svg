@@ -1,0 +1,36 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+  
+  <!-- Browser Window -->
+  <rect x="20" y="20" width="760" height="560" rx="10" fill="#ffffff" stroke="#e0e0e0" stroke-width="2"/>
+  <rect x="20" y="20" width="760" height="40" rx="10" fill="#e0e0e0"/>
+  <rect x="20" y="50" width="760" height="10" fill="#ffffff"/> <!-- Hide bottom radius of header -->
+  <circle cx="50" cy="40" r="6" fill="#ff5f56"/>
+  <circle cx="70" cy="40" r="6" fill="#ffbd2e"/>
+  <circle cx="90" cy="40" r="6" fill="#27c93f"/>
+  
+  <!-- Navbar -->
+  <rect x="40" y="80" width="100" height="20" rx="4" fill="#333"/>
+  <rect x="500" y="85" width="60" height="10" rx="2" fill="#ccc"/>
+  <rect x="580" y="85" width="60" height="10" rx="2" fill="#ccc"/>
+  <rect x="660" y="85" width="60" height="10" rx="2" fill="#ccc"/>
+  
+  <!-- Hero Section -->
+  <rect x="40" y="130" width="350" height="200" rx="8" fill="#e3f2fd"/>
+  <rect x="60" y="160" width="200" height="20" rx="4" fill="#1976d2"/>
+  <rect x="60" y="190" width="280" height="10" rx="2" fill="#90caf9"/>
+  <rect x="60" y="210" width="250" height="10" rx="2" fill="#90caf9"/>
+  <rect x="60" y="240" width="100" height="30" rx="15" fill="#1976d2"/>
+  
+  <!-- Hero Image Placeholder -->
+  <rect x="420" y="130" width="340" height="200" rx="8" fill="#bbdefb"/>
+  <circle cx="590" cy="230" r="50" fill="#ffffff" opacity="0.5"/>
+  
+  <!-- Features Section -->
+  <rect x="40" y="360" width="220" height="150" rx="8" fill="#fff3e0"/>
+  <rect x="290" y="360" width="220" height="150" rx="8" fill="#e8f5e9"/>
+  <rect x="540" y="360" width="220" height="150" rx="8" fill="#f3e5f5"/>
+  
+  <text x="400" y="560" font-family="Arial" font-size="14" fill="#999" text-anchor="middle">Web Design Mockup</text>
+</svg>

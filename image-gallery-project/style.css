@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 216, 149);
+  /* margin-bottom: 20px; */
+}
+.filter-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: antiquewhite;
+}
+.btn {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  background-color: rgb(178, 93, 93);
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.btn:hover {
+  background-color: brown;
+  transform: scale(1.2);
+}
+.active {
+  background-color: brown;
+  transform: scale(1.2);
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+.picture {
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.picture img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.picture:hover img {
+  transform: scale(1.1);
+}
+.light-box {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.85);
+}
+.big-image img {
+  width: 80vw;
+  height: 80vh;
+  border-radius: 8px;
+  object-fit: contain;
+}
+.pre-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.pre-btn { left: 20px; }
+.next-btn { right: 20px; }
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.pre-btn:hover, .next-btn:hover, .close-btn:hover {
+  color: rgb(255, 216, 149);
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 600px) {
+  .filter-btn {
+    flex-wrap: wrap;
+  }
+  .gallery-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
